@@ -1,0 +1,18 @@
+# Adobe Hackathon 2025 - Challenge 1a Requirements
+# High-performance PDF processing with advanced heading detection + ML models
+
+# Core PDF processing (fastest available)
+PyMuPDF>=1.23.0
+
+# Numerical computing for advanced font analysis
+numpy>=1.21.0
+
+# Machine Learning Models (Under 200MB constraint)
+sentence-transformers>=2.2.0  # all-MiniLM-L6-v2 (80MB)
+transformers>=4.20.0          # bert-tiny (16MB) 
+torch>=1.11.0                 # PyTorch backend
+scikit-learn>=1.1.0           # ML utilities
+
+# Standard library dependencies
+pathlib2>=2.3.0
+typing-extensions>=4.0.0

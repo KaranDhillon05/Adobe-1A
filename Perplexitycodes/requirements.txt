@@ -1,0 +1,22 @@
+# Adobe Hackathon 2025 - PDF Processing System Requirements
+
+# Core PDF processing (fastest available)
+PyMuPDF>=1.23.0
+
+# Numerical computing and machine learning
+numpy>=1.21.0
+scikit-learn>=1.0.0
+
+# Natural language processing
+nltk>=3.8
+sentence-transformers>=2.2.0
+
+# For Challenge 1b semantic analysis (lightweight model)
+# Ensures model size stays under 1GB constraint
+
+# Standard library dependencies (should be included in base image)
+pathlib2>=2.3.0
+typing-extensions>=4.0.0
+
+# Optional: for improved performance
+# numba>=0.56.0  # Uncomment if JIT compilation is needed
