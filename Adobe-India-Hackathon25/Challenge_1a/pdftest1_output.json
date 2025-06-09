@@ -1,0 +1,1105 @@
+{
+  "title": "Portable Document Format (PDF)",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Portable Document Format (PDF)",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Basic Testing Guide",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Some tests in this guide require running the built-in Accessibility Check . For quick access to the",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "accessibility tools used in this guide, add a shortcut to the Accessibility group in the Tools/Task pane.",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "To create the shortcut, select the Tools tab > Protect & Standardize group > Accessibility > Add . The",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Preconditions",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "A. Is the PDF a PDF Portfolio or does the PDF have file attachments",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "How to test A",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "PDF Portfolio",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Instruction A.1: Open each individual document/file included in the portfolio and test with the",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Test A.1: Was each file tested with the corresponding test process, and did the file pass? If not, the PDF",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "PDF Attachments",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Instruction A.2: Open the PDF and activate the View menu > Show/Hide > Navigation Panes",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Attachments . Select and open each attachment separately and test with the corresponding test",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Test A.2: Were all attachments tested with the corresponding test process, and did they pass? If not",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "B. Was the PDF generated from Adobe Designer or LiveCycle Designer",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "How to test B",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Instruction B: Open the File menu > Properties > Document Properties and select the Description",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "tab (or Ctrl+D ).",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "Test B: Do the properties for Application: and PDF Producer: display Adobe LiveCycle Designer or",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "Designer ? If so, the form cannot be tested using Acrobat Pro.",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "C. Does the PDF contain programming scripts",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "be tested using software testing methods. The Department of Homeland Security’s (DHS) Section 508",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "How to test C",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "Instruction C: Activate the Accessibility Checker ( Tools > Accessibility > Add > Accessibility Check",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "test the PDF with the DHS’s Section 508 Trusted Tester Conformance Test Process .",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "D. Is the PDF tagged",
+      "page": 4
+    },
+    {
+      "level": "H2",
+      "text": "How to test D",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Instruction D: Activate the File menu > Properties > Description tab to open the Document",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Properties window.",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Test D: Does Tagged PDF display Yes under the Advanced section in the Document Properties",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Description tab? If not, the PDF fails this test.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "How to test E",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Note: While testing with Acrobat, you must uncheck the options under Edit > Preferences",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "Instruction E.2: Activate the Accessibility Check ( Tools > Accessibility > Accessibility Check > set the",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "category to Documents > Start Checking ). Expand the Document testing results.",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "Test E.2: Does the Accessibility Checker flag Image-only PDF – Failed as an issue? If yes, the PDF fails",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility Check ( Tools > Accessibility Check > Documents > Start Checking ). Expand the",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "Document category in the Accessibility Checker pane to display issues.",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "Test E.3: Does Tagged PDF – Failed display under the Document category? If yes, the PDF fails this",
+      "page": 6
+    },
+    {
+      "level": "H1",
+      "text": "F. Does the PDF include tracked changes or have added notes/comments",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "the Save as PDF feature. All tracked changes are accepted as final and comments are converted to",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Exporting to a PDF/XPS file retains the visual appearance of the tracked changes. All text is converted",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "unintelligible. Notes/comments are tagged as Annotation , strikethrough, underlines for insertions",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "How to test F",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "Instruction F.1: To check for untagged annotations (notes/comments) in a tracked changes PDF",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "activate the Accessibility Check ( Tools > Accessibility Check > Documents > Start Checking ).",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "Instruction F.2: A PDF that has visual track changes originating from a source document (PDF/XPS",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "Test F.2 : Does the PDF have visible tracked changes, and is the tagged content inarticulate? If yes, the",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "Instruction F.3: PDF text markups must have comments explaining the action and content change. To",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "check markup comments, have accurate descriptions for the action and content change go to Tools",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "menu> Share & Review section > Comment > Open to access the Comments pane. Verify the",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "Test F.3: Do all comments associated with the track changes reflect the action and content change? If",
+      "page": 8
+    },
+    {
+      "level": "H1",
+      "text": "Document Properties",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "1. Does the PDF display a descriptive title when opened",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "How to test 1",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Instruction 1.1: Go to the Description tab in the Document Properties window ( File > Properties",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "Description ).",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "Test 1.1: Does the Title field have a descriptive title identifying the document? If not, the PDF fails this",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 1.2: Accessibility Check will automatically fail Document > Title if the initial view is set to",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "display File Name . Go to File > Properties > Initial View tab and verify Window Options is set to",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "Show: Document Title.",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "Test 1.2: Does the Initial View tab display Document Title in the Window Options > Show : field? If",
+      "page": 9
+    },
+    {
+      "level": "H1",
+      "text": "2. Is Assistive Technology access enabled",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "How to test 2",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "However, these settings may also block access to assistive technology users, unless the Content",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "copying for Accessibility option in the Document Properties > Security tab is enabled.",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 2 : Go to File > Properties to open the Document Properties > Security tab and verify the",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "Content Copying for Accessibility option is set to Allowed .",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "Test 2: Does Content Copying for Accessibility display Allowed ? If not, the PDF fails this test.",
+      "page": 10
+    },
+    {
+      "level": "H1",
+      "text": "3. Is the appropriate language assigned",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "How to test 3",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "Document Language",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Document Properties > Advanced tab > Language option.",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "Note: If the language is not available from the drop-down menu, you can type it in the language field",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 3.1: Go to File > Properties > Document Properties > Advanced tab > Reading Options",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "Language and verify the PDF language is set to the corresponding document language.",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "Test 3.1: Does the Language field under the Document Properties > Advanced tab display the",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "Sections that contain text in languages other than the default document language",
+      "page": 11
+    },
+    {
+      "level": "H3",
+      "text": "Instruction 3.2: Identify any sections in the document where the content text differs from the default",
+      "page": 11
+    },
+    {
+      "level": "H4",
+      "text": "Select the text in the language that differs from the document language. Open the Accessibility Tags",
+      "page": 11
+    },
+    {
+      "level": "H4",
+      "text": "pane ( View > Show/Hide > Navigation Panes > Accessibility Tags ). Find and select the corresponding",
+      "page": 11
+    },
+    {
+      "level": "H4",
+      "text": "tag ( Accessibility tags pane > Options menu > Find Tag from Selection ). With the tag selected, open",
+      "page": 11
+    },
+    {
+      "level": "H4",
+      "text": "the Object Properties window ( Alt + Enter > Content tab > Language ).",
+      "page": 11
+    },
+    {
+      "level": "H4",
+      "text": "Test 3.2: Does the Language field display the selection’s language or a letter code for the",
+      "page": 11
+    },
+    {
+      "level": "H1",
+      "text": "Accessibility Tags",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "4. Do the accessibility tags follow the visual/logical reading order of the",
+      "page": 12
+    },
+    {
+      "level": "H1",
+      "text": "document",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "How to test 4",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "Note: This is a manual check that requires the use of the Accessibility tags pane and the Reading",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "Order pane or the use of assistive technology to read through the document content.",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 4: Open the Accessibility tags pane ( View menu > Show/Hide > Navigation Panes",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility tags ). Expand the Accessibility tags Options menu and select the Highlight Content",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "option. Reopen the Accessibility tags Options menu and select the Reading Order option or type x to",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "Tags tree to show all tags. Use the keyboard’s down arrow key to navigate through the tags. Verify all",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "in the Tags tree corresponds to the highlighted numbered reading order in the document content.",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "Test 4: Do all accessibility tags correspond to the numbered reading order of the document content? If",
+      "page": 13
+    },
+    {
+      "level": "H1",
+      "text": "5. Is all decorative content marked as an artifact",
+      "page": 13
+    },
+    {
+      "level": "H2",
+      "text": "How to test 5",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "Instruction 5: Open the Accessibility tags pane ( View menu > Show/Hide > Navigation Panes",
+      "page": 13
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility tags ). Expand the Accessibility tags Options menu and select Find… to open the Find",
+      "page": 13
+    },
+    {
+      "level": "H4",
+      "text": "button. Select Find > Find Next to highlight and move through all artifacted elements in the",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "Test: Is all ornamental, trivial, or redundant content and objects marked/identified as artifacts? If not",
+      "page": 14
+    },
+    {
+      "level": "H1",
+      "text": "6. Is vital information in headers, footers, and watermarks tagged",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "How to test 6",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "section.",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "Note: this test is not necessary, if the content in the headers and footers is redundant, repeated, or",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 6: Locate vital information at the beginning of the document or a section, at the top or",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "Show/Hide > Navigation Panes > Accessibility tags ). Expand the Accessibility tags Options menu",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "and select the Highlight Content option. Highlight the vital information and expand the Accessibility",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "tags Options menu and select Find Tag from Selection.",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "Test 6: Is the vital information in the header, footer and/or watermark tagged, and placed at the",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "beginning of the tag tree, or the related section? If not, the PDF fails this test.",
+      "page": 15
+    },
+    {
+      "level": "H1",
+      "text": "7. Are all headings in the document tagged with heading tags",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "How to test 7",
+      "page": 15
+    },
+    {
+      "level": "H3",
+      "text": "Note 1: All headings in source documents must be programmatically identified with an assigned",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 7.1: Open the Accessibility tags pane ( View menu > Show/Hide > Navigation Panes",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility tags ). In the Accessibility tags pane, expand the Tags tree to show all tags. Check the",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility tags Options menu and select Find Tag from Selection . The selected tag should have a",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "Test 7.1: Are all visually apparent headings in the document tagged with a corresponding H1 through",
+      "page": 16
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 7.2: Locate any nonstandard PDF heading tags (e.g. <Title>, <H_1>, <Section",
+      "page": 16
+    },
+    {
+      "level": "H4",
+      "text": "<Heading3>). Check the appropriate mapping, by opening the Role Map ( Accessibility tags > Options",
+      "page": 16
+    },
+    {
+      "level": "H4",
+      "text": "menu > Edit Role Map ). In the Role Map window expand Document Roles to check mappings",
+      "page": 16
+    },
+    {
+      "level": "H4",
+      "text": "Test 7.2: Are all non-standard heading tags mapped to a standard heading tag? If not, the PDF fails the",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 7.3: Open the Accessibility tags pane ( View menu > Show/Hide > Navigation Panes",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility tags ). Check all heading tags in the document are in logical sequence without skipping a",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "Note: You could also run the Accessibility Check ( Tools > Accessibility > Open > Accessibility Check",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "> Start Checking ). The Headings section will display: Appropriate nesting – Failed if headings are",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "Test 7.3: Are all the headings in the document nested in a logical sequence (<H1>, <H2>, <H3>; <H1",
+      "page": 17
+    },
+    {
+      "level": "H1",
+      "text": "8. Are lists tagged correctly",
+      "page": 17
+    },
+    {
+      "level": "H2",
+      "text": "How to test 8",
+      "page": 17
+    },
+    {
+      "level": "H3",
+      "text": "List (L) tag, with a nested child List Item (LI) tag. All LI tags must have a nested child Label (Lbl) tag",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "and a child List Item Body (LBody) tag. Multi-level lists must be nested in the last LBody tag of the",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "Note: Lists originating in Microsoft Word will not export a Label (Lbl) tag. The List Item Body (LBody)",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "tag includes the bullet or number pertaining to that List Item .",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 8.1: Open the Accessibility tags pane ( View > Show/Hide > Navigation Panes",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "its corresponding tag ( Accessibility tags Options menu > Find Tag from Selection ). Expand the list",
+      "page": 18
+    },
+    {
+      "level": "H4",
+      "text": "Test 8.1: Does the highlighted content have a parent <L> tag, with nested child List Item (LI) tag(s)",
+      "page": 18
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 8.2: Open the Accessibility tags pane (View > Show/Hide > Navigation Panes",
+      "page": 18
+    },
+    {
+      "level": "H4",
+      "text": "content and find its corresponding tag ( Accessibility tags Options menu > Find Tag from Selection ).",
+      "page": 18
+    },
+    {
+      "level": "H4",
+      "text": "Test 8.2: Are the tiered multilevel lists nested in the last LBody tag of the preceding level? If not, PDF",
+      "page": 18
+    },
+    {
+      "level": "H1",
+      "text": "Objects",
+      "page": 19
+    },
+    {
+      "level": "H1",
+      "text": "9. Do all meaningful images and objects in the PDF have a description of",
+      "page": 19
+    },
+    {
+      "level": "H1",
+      "text": "their purpose or function",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "How to test 9",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "contextual description in the form of a caption, nearby text, or Alternate Text is required.",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "Note 1: Images of, or that contain text (i.e. logos, agency seals) should have the text that is part of the",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "Note2: Complex Images, charts, graphs, etc. may require a longer description. These types of",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 9: Activate the Accessibility Check ( Tools > Accessibility Check > Documents > Start",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "Checking ). Expand the Alternate text category in the Accessibility Checker pane to display issues.",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "Test 9: Does the Alternate text group display Passed results for all listed categories? If not, the PDF",
+      "page": 19
+    },
+    {
+      "level": "H1",
+      "text": "10. Does the PDF have data tables",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "How to test 10",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "Data tables in PDFs must be tagged as < Table> . Table rows must be tagged as Table Row <TR>",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "column and row header cells must be tagged as Table Header Cell (TH) , and data cells must be",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "tagged as Table Data Cell (TD) . Tables containing multiple header rows, or cells that span multiple",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "Note: the table editor is a visual tool that is not keyboard accessible. To verify/test the correct reading",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "and/arrow through the table tags. Assistive technology users may skip the tests in Section 10.",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 10.1: Locate programmatically identified data tables. Open the Accessibility tags pane",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "( View > Show/Hide > Navigation Panes > Accessibility tags ) and select the first table in the tag tree.",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Expand the Accessibility tags Options menu and type the letter q to open the table editor and verify",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Test 10.1: Are the table header cells tagged as <TH> and the data cells as <TD>? If not, the PDF fails",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Complex tables (tables with multiple header rows/columns, split or merged cells) require Header Cell",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "ID s to create associations with related header/data cells providing assistive technology users accurate",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 10.2: Open the Accessibility tags pane ( View > Show/Hide > Navigation Panes",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility tags ) and select the first table in the tag tree. Expand the Accessibility tags Options",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "menu and type the letter q to open the table editor. Select a <TH> cell in the document content",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "window, right click to open the table editor options, and select Table Cell Properties…(P) . For each",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "1. Header Cell radio button is checked",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "2. Scope indicates Column or Row",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "4. ID: field has a unique identifier",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "5. If applicable, Associated Header Cell ID s are listed",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Note: If the cell tags identifiers ( TH , TD ) do not display, check the Show table cells options in the",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Reading Order Pane, or under the Table Editor Options… section in the table editor options pop-up",
+      "page": 20
+    },
+    {
+      "level": "H4",
+      "text": "Test 10.2: Does the header cell scope, row, and column span match the visual layout of the table, and",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 10.3: Complex tables require an additional test to verify table data cells and table header",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "Open the Accessibility tags pane ( View > Show/Hide > Navigation Panes > Accessibility tags ) and",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "select the first table in the tag tree. Expand the Accessibility tags Options menu and type the letter q",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "to open the table editor. Select a <TD> cell in the document content window, right click to open the",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "table editor options, and select Table Cell Properties…(P) . For each data cell verify",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "1. Data Cell radio button is checked",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "2. Attributes field for Row Span and Column Span are correct",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "3. Associated Header Cell IDs: for row and column headers are listed",
+      "page": 21
+    },
+    {
+      "level": "H4",
+      "text": "Test D: Are Data Cells associated with Header Cell IDs (Figure 29)? If not, the PDF fails this test.",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "11. Does the PDF have links and controls",
+      "page": 22
+    },
+    {
+      "level": "H2",
+      "text": "How to test 11",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "Instruction 11 : Press the Tab key to navigate to links and user controls in the content. Check that each",
+      "page": 22
+    },
+    {
+      "level": "H4",
+      "text": "identified link has an unambiguous name that describes its destination, function, and/or purpose OR",
+      "page": 22
+    },
+    {
+      "level": "H4",
+      "text": "Test 11: Does the link have a unique name that describes the destination, function, and/or purpose",
+      "page": 22
+    },
+    {
+      "level": "H4",
+      "text": "OR that is determinable within context? If not, the PDF fails this test.",
+      "page": 22
+    },
+    {
+      "level": "H1",
+      "text": "12. Is the PDF a fillable form",
+      "page": 22
+    },
+    {
+      "level": "H2",
+      "text": "How to test 12",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "Instruction 12.1: All form fields must have a tooltip, and the tool tip must match its label or",
+      "page": 23
+    },
+    {
+      "level": "H4",
+      "text": "Test 12.1: When you tab through or hover over each form field, is a tooltip revealed and does the",
+      "page": 23
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 12.2: Press the tab key to find form fields (text fields, radio buttons, checkboxes, combo",
+      "page": 23
+    },
+    {
+      "level": "H4",
+      "text": "Test 12.2: When you tab through the PDF, does the tab order match the visually logical order of the",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "13. Does meaningful information conveyed only with color or other",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "visual characteristics also have a text description",
+      "page": 23
+    },
+    {
+      "level": "H2",
+      "text": "How to test 13",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Instruction 13: Find where color and/or other visual characteristics, such as green square in right",
+      "page": 23
+    },
+    {
+      "level": "H4",
+      "text": "Test 13: Is there text that conveys the meaning of the color or other visual characteristics? If not, the",
+      "page": 23
+    },
+    {
+      "level": "H1",
+      "text": "14. Is the contrast ratio between text and background sufficient",
+      "page": 24
+    },
+    {
+      "level": "H2",
+      "text": "How to test 14",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "Instruction 14: Open the Colour Contrast Analyser application. Drag the Foreground eyedropper icon",
+      "page": 24
+    },
+    {
+      "level": "H4",
+      "text": "Test 14: Does color contrast ratio of Foreground (text) and Background ratio meet the minimum",
+      "page": 24
+    },
+    {
+      "level": "H4",
+      "text": "Note: To check for color blindness simulation with any preview in the testing window, open the View",
+      "page": 24
+    },
+    {
+      "level": "H4",
+      "text": "menu and select the Colour Blindness simulation ( Ctrl+B ) option.",
+      "page": 24
+    },
+    {
+      "level": "H1",
+      "text": "Miscellaneous",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "15. Does the PDF contain audio-only, video-only, or multimedia objects",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "that contain meaningful information",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "How to test 15",
+      "page": 25
+    },
+    {
+      "level": "H3",
+      "text": "Note: If the PDF does not contain audio, video, or multimedia files, you do not need to perform this",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "Instruction 15: Activate the meaningful audio-only object",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "Test 15.1: Does the audio-only object have transcript that is accurate and complete? If not, the PDF",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "Test 15.2: Does the video-only object have text description that is accurate and complete? If not, the",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "Test 15.3: Does the multimedia (audio and video) have synchronized captions and audio description",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "16. Does the PDF have flashing objects",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "How to test 16",
+      "page": 25
+    },
+    {
+      "level": "H1",
+      "text": "17. Does the PDF need an accessible alternate version",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "How to test 17",
+      "page": 25
+    }
+  ]
+}

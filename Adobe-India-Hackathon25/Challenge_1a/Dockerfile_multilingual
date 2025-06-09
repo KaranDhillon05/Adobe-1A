@@ -1,0 +1,81 @@
+# Adobe Hackathon 2025 - Multilingual Challenge 1a Docker Configuration
+# Advanced multilingual PDF processing system with comprehensive language support
+
+FROM --platform=linux/amd64 python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for PDF processing, ML models, and multilingual support
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    libfontconfig1 \
+    libfreetype6 \
+    libxft2 \
+    libx11-6 \
+    libxcb1 \
+    libxau6 \
+    libxdmcp6 \
+    curl \
+    ca-certificates \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create necessary directories
+RUN mkdir -p /app/input /app/output
+
+# Copy requirements first for better Docker layer caching
+COPY requirements_multilingual.txt .
+
+# Install Python dependencies with optimizations
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements_multilingual.txt
+
+# Download FastText language identification model
+RUN python -c "import fasttext; fasttext.util.download_model('en', if_exists='ignore')" || echo "FastText download failed, will use fallback methods"
+
+# Copy application code
+COPY process_pdfs_multilingual.py .
+
+# Make script executable
+RUN chmod +x process_pdfs_multilingual.py
+
+# Set Python path
+ENV PYTHONPATH=/app
+
+# Performance optimizations
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Use multiple CPU cores efficiently
+ENV OPENBLAS_NUM_THREADS=8
+ENV OMP_NUM_THREADS=8
+
+# ML model optimizations (CPU-only for container compatibility)
+ENV PYTORCH_DISABLE_CUDA=1
+ENV TRANSFORMERS_OFFLINE=0
+ENV TOKENIZERS_PARALLELISM=false
+
+# Language detection optimizations
+ENV FASTTEXT_MODEL_CACHE=/app/.fasttext
+RUN mkdir -p /app/.fasttext
+
+# Multilingual processing settings
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+
+# Default command
+CMD ["python", "process_pdfs_multilingual.py"]
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD python -c "import sys, fasttext; sys.exit(0)"
+
+# Metadata
+LABEL maintainer="Adobe Hackathon Team - Angry Nerds"
+LABEL version="4.0-multilingual"
+LABEL description="Multilingual PDF processing system for Adobe Hackathon 2025 Challenge 1a"
+LABEL languages="English,Spanish,French,German,Chinese,Japanese,Arabic,Hindi,Korean,Russian,Portuguese,Italian,Dutch,Turkish"
+LABEL models="FastText-LID + paraphrase-multilingual-MiniLM-L12-v2 + mdeberta-v3-base"
+LABEL approach="Multilingual language detection + statistical font analysis + ML enhancement"

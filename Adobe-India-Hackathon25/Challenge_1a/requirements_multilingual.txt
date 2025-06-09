@@ -1,0 +1,39 @@
+# Adobe Hackathon 2025 - Challenge 1a Multilingual Requirements
+# Advanced PDF processing with comprehensive language support
+
+# Core PDF processing (fastest available)
+PyMuPDF>=1.23.0
+
+# Numerical computing for advanced font analysis
+numpy>=1.21.0
+
+# Language Detection Libraries (multiple options for robustness)
+# FastText - Most accurate and fastest (recommended)
+fasttext>=0.9.2
+
+# LangDetect - Lightweight fallback
+langdetect>=1.0.9
+
+# Polyglot - For complex multilingual scenarios (optional)
+# polyglot>=16.07.04
+
+# Machine Learning Models for Multilingual Processing
+# Multilingual sentence transformers
+sentence-transformers>=2.2.0
+
+# Multilingual transformer models
+transformers>=4.20.0
+
+# PyTorch backend
+torch>=1.11.0
+
+# ML utilities
+scikit-learn>=1.1.0
+
+# Standard library dependencies
+pathlib2>=2.3.0
+typing-extensions>=4.0.0
+
+# Optional: Additional language processing
+# spacy>=3.4.0  # For advanced NLP features
+# nltk>=3.7     # For language-specific tokenization

@@ -1,0 +1,1 @@
+its much better now. but its not efficient enough. there are some issues i can see. i dont know if i am right or not but "text": "DO NOT check Do not show this message again", is not a heading. its a part of the paragraph on page 5. read the again and keep in mind what needs to be built. also follow the expected execution process that is written in the document.
