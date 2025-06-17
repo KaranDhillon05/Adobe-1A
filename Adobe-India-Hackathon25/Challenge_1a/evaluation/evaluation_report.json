@@ -1,0 +1,405 @@
+{
+  "evaluation_timestamp": "2025-07-27 11:16:50",
+  "summary": {
+    "approaches_evaluated": [
+      "statistical",
+      "ml_only",
+      "enhanced"
+    ],
+    "total_documents": 8,
+    "evaluation_criteria": [
+      "Processing speed",
+      "Number of headings detected",
+      "Quality of detected headings",
+      "Consistency across documents"
+    ]
+  },
+  "performance_metrics": {
+    "statistical": {
+      "total_documents": 8,
+      "total_headings": 45,
+      "avg_headings_per_doc": 5.62,
+      "avg_processing_time": 0.0,
+      "avg_quality_score": 1.0,
+      "processing_speed": 0
+    },
+    "ml_only": {
+      "total_documents": 8,
+      "total_headings": 160,
+      "avg_headings_per_doc": 20.0,
+      "avg_processing_time": 3.35,
+      "avg_quality_score": 0.917,
+      "processing_speed": 0.3
+    },
+    "enhanced": {
+      "total_documents": 8,
+      "total_headings": 29,
+      "avg_headings_per_doc": 3.62,
+      "avg_processing_time": 3.93,
+      "avg_quality_score": 0.8,
+      "processing_speed": 0.25
+    }
+  },
+  "quality_analysis": {
+    "statistical": {
+      "total_headings": 45,
+      "avg_heading_length": 18.6,
+      "level_distribution": {
+        "H1": 8,
+        "H2": 20,
+        "H3": 17
+      },
+      "reasonable_length_ratio": 0.867,
+      "has_hierarchical_structure": true
+    },
+    "ml_only": {
+      "total_headings": 160,
+      "avg_heading_length": 14.1,
+      "level_distribution": {
+        "H3": 71,
+        "H1": 28,
+        "H2": 61
+      },
+      "reasonable_length_ratio": 0.8,
+      "has_hierarchical_structure": true
+    },
+    "enhanced": {
+      "total_headings": 29,
+      "avg_heading_length": 7.8,
+      "level_distribution": {
+        "H3": 10,
+        "H4": 17,
+        "H2": 2
+      },
+      "reasonable_length_ratio": 0.724,
+      "has_hierarchical_structure": true
+    }
+  },
+  "document_comparisons": {
+    "French 1A": {
+      "document": "French 1A",
+      "approaches": {
+        "statistical": {
+          "title": "French 1A",
+          "heading_count": 16,
+          "processing_time": 0,
+          "headings": [
+            {
+              "level": "H1",
+              "text": "Study French",
+              "page": 1
+            },
+            {
+              "level": "H2",
+              "text": "Why",
+              "page": 1
+            },
+            {
+              "level": "H3",
+              "text": "CREPERIE",
+              "page": 2
+            },
+            {
+              "level": "H3",
+              "text": "alphabet",
+              "page": 5
+            },
+            {
+              "level": "H2",
+              "text": "Core",
+              "page": 6
+            }
+          ],
+          "method": "Unknown"
+        },
+        "ml_only": {
+          "title": "Suggestions",
+          "heading_count": 20,
+          "processing_time": 3.84,
+          "headings": [
+            {
+              "level": "H2",
+              "text": "Suggestions",
+              "page": 8,
+              "ml_score": 0.613,
+              "semantic_sim": 0.692,
+              "bert_score": 0.534
+            },
+            {
+              "level": "H2",
+              "text": "performance",
+              "page": 18,
+              "ml_score": 0.568,
+              "semantic_sim": 0.568,
+              "bert_score": 0.568
+            },
+            {
+              "level": "H2",
+              "text": "performance",
+              "page": 20,
+              "ml_score": 0.568,
+              "semantic_sim": 0.568,
+              "bert_score": 0.568
+            },
+            {
+              "level": "H2",
+              "text": "performance",
+              "page": 28,
+              "ml_score": 0.568,
+              "semantic_sim": 0.568,
+              "bert_score": 0.568
+            },
+            {
+              "level": "H2",
+              "text": "introducing",
+              "page": 20,
+              "ml_score": 0.566,
+              "semantic_sim": 0.601,
+              "bert_score": 0.531
+            }
+          ],
+          "method": "ML-Only (Semantic + BERT)"
+        },
+        "enhanced": {
+          "title": "Culture",
+          "heading_count": 13,
+          "processing_time": 4.48,
+          "headings": [
+            {
+              "level": "H3",
+              "text": "Culture",
+              "page": 25,
+              "scores": {
+                "statistical": 0.78,
+                "semantic": 0.652,
+                "bert": 0.444,
+                "combined": 0.674,
+                "confidence": 0.981
+              }
+            },
+            {
+              "level": "H3",
+              "text": "Why",
+              "page": 1,
+              "scores": {
+                "statistical": 0.78,
+                "semantic": 0.615,
+                "bert": 0.446,
+                "combined": 0.664,
+                "confidence": 0.981
+              }
+            },
+            {
+              "level": "H3",
+              "text": "Histoire",
+              "page": 12,
+              "scores": {
+                "statistical": 0.78,
+                "semantic": 0.593,
+                "bert": 0.45,
+                "combined": 0.658,
+                "confidence": 0.982
+              }
+            },
+            {
+              "level": "H4",
+              "text": "Name",
+              "page": 6,
+              "scores": {
+                "statistical": 0.78,
+                "semantic": 0.545,
+                "bert": 0.454,
+                "combined": 0.644,
+                "confidence": 0.981
+              }
+            },
+            {
+              "level": "H4",
+              "text": "Study",
+              "page": 1,
+              "scores": {
+                "statistical": 0.78,
+                "semantic": 0.554,
+                "bert": 0.435,
+                "combined": 0.643,
+                "confidence": 0.98
+              }
+            }
+          ],
+          "method": "Enhanced Hybrid (Statistical + Fine-tuned ML)"
+        }
+      }
+    },
+    "file04": {
+      "document": "file04",
+      "approaches": {
+        "statistical": {
+          "title": "Parsippany -Troy Hills STEM Pathways",
+          "heading_count": 1,
+          "processing_time": 0,
+          "headings": [
+            {
+              "level": "H1",
+              "text": "Parsippany -Troy Hills STEM Pathways",
+              "page": 1
+            }
+          ],
+          "method": "Unknown"
+        },
+        "ml_only": {
+          "title": "Goals:",
+          "heading_count": 20,
+          "processing_time": 0.83,
+          "headings": [
+            {
+              "level": "H2",
+              "text": "Goals:",
+              "page": 1,
+              "ml_score": 0.555,
+              "semantic_sim": 0.546,
+              "bert_score": 0.564
+            },
+            {
+              "level": "H2",
+              "text": "Mission Statement:",
+              "page": 1,
+              "ml_score": 0.506,
+              "semantic_sim": 0.464,
+              "bert_score": 0.548
+            },
+            {
+              "level": "H3",
+              "text": "design and implement a community",
+              "page": 1,
+              "ml_score": 0.478,
+              "semantic_sim": 0.427,
+              "bert_score": 0.529
+            },
+            {
+              "level": "H3",
+              "text": "impact project.",
+              "page": 1,
+              "ml_score": 0.475,
+              "semantic_sim": 0.406,
+              "bert_score": 0.544
+            },
+            {
+              "level": "H3",
+              "text": "of study in a specialized area.",
+              "page": 1,
+              "ml_score": 0.459,
+              "semantic_sim": 0.406,
+              "bert_score": 0.511
+            }
+          ],
+          "method": "ML-Only (Semantic + BERT)"
+        },
+        "enhanced": {
+          "title": "Enhanced Processing Result",
+          "heading_count": 0,
+          "processing_time": 0.88,
+          "headings": [],
+          "method": "Enhanced Hybrid (Statistical + Fine-tuned ML)"
+        }
+      }
+    },
+    "pdftest1": {
+      "document": "pdftest1",
+      "approaches": {
+        "statistical": {
+          "title": "Portable Document Format (PDF) Basic Testing Guide",
+          "heading_count": 12,
+          "processing_time": 0,
+          "headings": [
+            {
+              "level": "H1",
+              "text": "Portable Document Format (PDF) Basic Testing Guide",
+              "page": 1
+            },
+            {
+              "level": "H2",
+              "text": "Preconditions",
+              "page": 2
+            },
+            {
+              "level": "H2",
+              "text": "Document Properties",
+              "page": 9
+            },
+            {
+              "level": "H2",
+              "text": "Accessibility Tags",
+              "page": 12
+            },
+            {
+              "level": "H3",
+              "text": "10. Does the PDF have data tables",
+              "page": 19
+            }
+          ],
+          "method": "Unknown"
+        },
+        "ml_only": {
+          "title": "section.",
+          "heading_count": 20,
+          "processing_time": 8.55,
+          "headings": [
+            {
+              "level": "H1",
+              "text": "section.",
+              "page": 14,
+              "ml_score": 0.746,
+              "semantic_sim": 0.943,
+              "bert_score": 0.549
+            },
+            {
+              "level": "H1",
+              "text": "section in the",
+              "page": 4,
+              "ml_score": 0.738,
+              "semantic_sim": 0.922,
+              "bert_score": 0.554
+            },
+            {
+              "level": "H1",
+              "text": "section >",
+              "page": 8,
+              "ml_score": 0.73,
+              "semantic_sim": 0.911,
+              "bert_score": 0.549
+            },
+            {
+              "level": "H2",
+              "text": "Scope indicates",
+              "page": 20,
+              "ml_score": 0.686,
+              "semantic_sim": 0.835,
+              "bert_score": 0.537
+            },
+            {
+              "level": "H2",
+              "text": "background color.",
+              "page": 24,
+              "ml_score": 0.649,
+              "semantic_sim": 0.789,
+              "bert_score": 0.51
+            }
+          ],
+          "method": "ML-Only (Semantic + BERT)"
+        },
+        "enhanced": {
+          "title": "Enhanced Processing Result",
+          "heading_count": 0,
+          "processing_time": 10.73,
+          "headings": [],
+          "method": "Enhanced Hybrid (Statistical + Fine-tuned ML)"
+        }
+      }
+    }
+  },
+  "recommendations": [
+    "Fastest processing: statistical approach",
+    "Best heading quality: statistical approach",
+    "Statistical approach recommended for high-volume processing"
+  ]
+}

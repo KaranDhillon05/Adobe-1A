@@ -1,0 +1,81 @@
+{
+  "title": "Application form for grant of LTC advance",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Application form for grant of LTC advance",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Name of the Government Servant",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Designation",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Date of entering the Central Government Service",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Whether permanent or temporary",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Home Town as recorded in the Service Book",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Relationship",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Age",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "11.",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Amount of advance required.",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "12. Amount of advance required.",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Signature of Government Servant.",
+      "page": 1
+    }
+  ],
+  "metadata": {
+    "processing_time": 0.4,
+    "method": "Enhanced Hybrid (Statistical + Fine-tuned ML)",
+    "total_spans": 33,
+    "heading_candidates": 12,
+    "models_used": {
+      "statistical_analysis": true,
+      "fine_tuned_bert": true,
+      "enhanced_semantic": true
+    },
+    "score_weights": {
+      "statistical": 0.7,
+      "semantic": 0.2,
+      "bert": 0.1
+    }
+  }
+}
