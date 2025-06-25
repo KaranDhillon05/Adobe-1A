@@ -1,0 +1,506 @@
+{
+  "title": "Portable Document Format (PDF)",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Portable Document Format (PDF)",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Basic Testing Guide",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Figure 1 – Single-key shortcuts preferences",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Preconditions",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "How to test A",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Portfolio fails this test.",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Attachments may be in various formats.",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "How to test B",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "C. Does the PDF contain programming scripts?",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "How to test C",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "D. Is the PDF tagged?",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "How to test D",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Properties window.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "scanned or images of text pages?",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "How to test E",
+      "page": 4
+    },
+    {
+      "level": "H4",
+      "text": "Figure 8: Other Accessibility Options preferences",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "document or added directly in the PDF.",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "How to test F",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "1. Does the PDF display a descriptive title when opened?",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "How to test 1",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Description ).",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Show: Document Title.",
+      "page": 9
+    },
+    {
+      "level": "H2",
+      "text": "2. Is Assistive Technology access enabled?",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "How to test 2",
+      "page": 10
+    },
+    {
+      "level": "H2",
+      "text": "3. Is the appropriate language assigned?",
+      "page": 10
+    },
+    {
+      "level": "H4",
+      "text": "How to test 3",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Document Properties > Advanced tab > Language option.",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Sections that contain text in languages other than the default document language",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "4. Do the accessibility tags follow the visual/logical reading order of the",
+      "page": 12
+    },
+    {
+      "level": "H4",
+      "text": "How to test 4",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "the document.",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "5. Is all decorative content marked as an artifact?",
+      "page": 13
+    },
+    {
+      "level": "H4",
+      "text": "How to test 5",
+      "page": 13
+    },
+    {
+      "level": "H2",
+      "text": "6. Is vital information in headers, footers, and watermarks tagged?",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "How to test 6",
+      "page": 14
+    },
+    {
+      "level": "H4",
+      "text": "section.",
+      "page": 14
+    },
+    {
+      "level": "H2",
+      "text": "7. Are all headings in the document tagged with heading tags?",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "How to test 7",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "heading tag (H1 through H6).",
+      "page": 15
+    },
+    {
+      "level": "H4",
+      "text": "correspond to a standard heading tag.",
+      "page": 16
+    },
+    {
+      "level": "H3",
+      "text": "Figure 27: Role Map Pane",
+      "page": 16
+    },
+    {
+      "level": "H4",
+      "text": "tagged out of sequence.",
+      "page": 17
+    },
+    {
+      "level": "H2",
+      "text": "8. Are lists tagged correctly?",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "How to test 8",
+      "page": 17
+    },
+    {
+      "level": "H3",
+      "text": "preceding level.",
+      "page": 17
+    },
+    {
+      "level": "H4",
+      "text": "their purpose or function?",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "How to test 9",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "image included in the alternate or descriptive text.",
+      "page": 19
+    },
+    {
+      "level": "H3",
+      "text": "alternate text.",
+      "page": 19
+    },
+    {
+      "level": "H2",
+      "text": "10. Does the PDF have data tables?",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "How to test 10",
+      "page": 19
+    },
+    {
+      "level": "H4",
+      "text": "reading order of the table data.",
+      "page": 20
+    },
+    {
+      "level": "H3",
+      "text": "table header cell verify:",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "1. Header Cell radio button is checked",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "2. Scope indicates Column or Row",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "3. Attributes field for Row Span and Column Span are correct",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "4. ID: field has a unique identifier",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "5. If applicable, Associated Header Cell ID s are listed",
+      "page": 20
+    },
+    {
+      "level": "H2",
+      "text": "1. Data Cell radio button is checked",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "2. Attributes field for Row Span and Column Span are correct",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "3. Associated Header Cell IDs: for row and column headers are listed",
+      "page": 21
+    },
+    {
+      "level": "H2",
+      "text": "11. Does the PDF have links and controls?",
+      "page": 22
+    },
+    {
+      "level": "H4",
+      "text": "How to test 11",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "Links and controls must:",
+      "page": 22
+    },
+    {
+      "level": "H2",
+      "text": "1. Be uniquely identified",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "and form fields)",
+      "page": 22
+    },
+    {
+      "level": "H4",
+      "text": "contain the link purpose, function, or destination.",
+      "page": 22
+    },
+    {
+      "level": "H4",
+      "text": "…further guidance is available on www.section508.gov",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "Uniquely identified Link:",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "Links Determinable within Context:",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "Ambiguous Links Not Determinable Within Context:",
+      "page": 22
+    },
+    {
+      "level": "H2",
+      "text": "12. Is the PDF a fillable form?",
+      "page": 22
+    },
+    {
+      "level": "H4",
+      "text": "How to test 12",
+      "page": 22
+    },
+    {
+      "level": "H3",
+      "text": "designated fields.",
+      "page": 22
+    },
+    {
+      "level": "H2",
+      "text": "13. Does meaningful information conveyed only with color or other",
+      "page": 23
+    },
+    {
+      "level": "H4",
+      "text": "visual characteristics also have a text description?",
+      "page": 23
+    },
+    {
+      "level": "H4",
+      "text": "How to test 13",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Project A Project B Project C",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Green - On Time",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Yellow - At Risk",
+      "page": 23
+    },
+    {
+      "level": "H3",
+      "text": "Red - Late",
+      "page": 23
+    },
+    {
+      "level": "H2",
+      "text": "14. Is the contrast ratio between text and background sufficient?",
+      "page": 24
+    },
+    {
+      "level": "H4",
+      "text": "Accessibility pane (Keyboard navigation).",
+      "page": 24
+    },
+    {
+      "level": "H4",
+      "text": "How to test 14",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "background color.",
+      "page": 24
+    },
+    {
+      "level": "H3",
+      "text": "Miscellaneous",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "15. Does the PDF contain audio-only, video-only, or multimedia objects",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "that contain meaningful information?",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "How to test 15",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "with disabilities have comparable access to the information.",
+      "page": 25
+    },
+    {
+      "level": "H3",
+      "text": "Also include:",
+      "page": 25
+    },
+    {
+      "level": "H3",
+      "text": "What is this?",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "Accurate and complete text description",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "16. Does the PDF have flashing objects?",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "How to test 16",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "17. Does the PDF need an accessible alternate version?",
+      "page": 25
+    },
+    {
+      "level": "H4",
+      "text": "How to test 17",
+      "page": 25
+    }
+  ],
+  "metadata": {
+    "processing_time": 5.31,
+    "method": "Enhanced Hybrid (Statistical + Fine-tuned ML)",
+    "total_spans": 424,
+    "heading_candidates": 97,
+    "models_used": {
+      "statistical_analysis": true,
+      "fine_tuned_bert": true,
+      "enhanced_semantic": true
+    },
+    "score_weights": {
+      "statistical": 0.7,
+      "semantic": 0.2,
+      "bert": 0.1
+    }
+  }
+}

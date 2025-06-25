@@ -1,0 +1,24 @@
+{
+  "total_examples": 2879,
+  "heading_examples": 922,
+  "non_heading_examples": 1957,
+  "high_confidence_examples": 10,
+  "medium_confidence_examples": 923,
+  "low_confidence_examples": 1946,
+  "source_pdfs": [
+    "file05.pdf",
+    "file01.pdf",
+    "file03.pdf",
+    "pdftest1.pdf",
+    "French 1A.pdf",
+    "sample.pdf",
+    "file02.pdf",
+    "file04.pdf"
+  ],
+  "confidence_distribution": {
+    "mean": 0.32131982204617326,
+    "std": 0.33957599503644575,
+    "min": 0.0,
+    "max": 0.855
+  }
+}

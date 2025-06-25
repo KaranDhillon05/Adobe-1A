@@ -1,0 +1,32 @@
+{
+  "overall_metrics": {
+    "accuracy": 0.52,
+    "precision": 0.2704,
+    "recall": 0.52,
+    "f1_score": 0.35578947368421054
+  },
+  "per_class_metrics": {
+    "non_heading": {
+      "precision": 0.52,
+      "recall": 1.0,
+      "f1_score": 0.6842105263157895,
+      "support": 13
+    },
+    "heading": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 12
+    }
+  },
+  "confusion_matrix": [
+    [
+      13,
+      0
+    ],
+    [
+      12,
+      0
+    ]
+  ]
+}

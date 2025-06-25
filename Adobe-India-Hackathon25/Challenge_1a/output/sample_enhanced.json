@@ -1,0 +1,236 @@
+{
+  "title": "Sample PDF Document",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Sample PDF Document",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Robert Maron",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Grzegorz Grudzi´nski",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "February 20, 1999",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "How to use the tools",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "1.2.2",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "To process the ﬁles you (may) need:",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Follow these steps:",
+      "page": 5
+    },
+    {
+      "level": "H4",
+      "text": "(three — to prepare valid table of contents);",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "CHAPTER 1. TEMPLATE",
+      "page": 6
+    },
+    {
+      "level": "H2",
+      "text": "4. run ghostscript : “ gv file.pdf ” to display or:",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "clude(s) for all the chapters.",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "First, copy template_chapter.tex to document_chapter1.tex",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "and add the line",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "\\include{document_chapter1}",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "in the document.tex , then edit document_chapter1.tex , change the",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "chapter title and edit the body of the chapter appropriately.",
+      "page": 6
+    },
+    {
+      "level": "H4",
+      "text": "Do use a spell-checker, please!",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "command line:",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "ispell -t document_chapter1.tex",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "1.3. L A TEX AND PDFL A TEX CAPABILITIES",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "to use some PDF speciﬁc packages.",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "You should also print",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "package manuals:",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "References",
+      "page": 7
+    },
+    {
+      "level": "H4",
+      "text": "MIMUW",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Hyperlinks",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "This is a target.",
+      "page": 8
+    },
+    {
+      "level": "H4",
+      "text": "And this is a link.",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "There are three kinds of horizontal dash:",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "National characters",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Reserved characters",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Math",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "2 − 3 , ...",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "2 , . ..",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "For more examples and symbols see chapter 3 of lshort2e.dvi .",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "Fonts",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "• Roman",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "• Emphasis",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "• Boldface",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "• Upright",
+      "page": 9
+    },
+    {
+      "level": "H4",
+      "text": "• S MALL CAPS",
+      "page": 9
+    },
+    {
+      "level": "H3",
+      "text": "• and sizes:",
+      "page": 9
+    }
+  ],
+  "metadata": {
+    "processing_time": 1.89,
+    "method": "Enhanced Hybrid (Statistical + Fine-tuned ML)",
+    "total_spans": 139,
+    "heading_candidates": 43,
+    "models_used": {
+      "statistical_analysis": true,
+      "fine_tuned_bert": true,
+      "enhanced_semantic": true
+    },
+    "score_weights": {
+      "statistical": 0.7,
+      "semantic": 0.2,
+      "bert": 0.1
+    }
+  }
+}

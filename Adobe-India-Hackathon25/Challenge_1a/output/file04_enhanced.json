@@ -1,0 +1,61 @@
+{
+  "title": "Parsippany -Troy Hills STEM Pathways",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Parsippany -Troy Hills STEM Pathways",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Mission Statement: To provide PTHSD high school students with the opportunity to",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Goals:",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "STEM careers.",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "future opportunities.",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "the school building.",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "of study in a specialized area.",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "PATHWAY OPTIONS",
+      "page": 1
+    }
+  ],
+  "metadata": {
+    "processing_time": 0.62,
+    "method": "Enhanced Hybrid (Statistical + Fine-tuned ML)",
+    "total_spans": 26,
+    "heading_candidates": 8,
+    "models_used": {
+      "statistical_analysis": true,
+      "fine_tuned_bert": true,
+      "enhanced_semantic": true
+    },
+    "score_weights": {
+      "statistical": 0.7,
+      "semantic": 0.2,
+      "bert": 0.1
+    }
+  }
+}
