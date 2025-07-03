@@ -1,0 +1,57 @@
+{
+  "cluster_0": {
+    "headings": [
+      "HOPE",
+      "SEE",
+      "HERE",
+      "Why",
+      "Culture"
+    ],
+    "sources": [
+      "general",
+      "general",
+      "general",
+      "general",
+      "general"
+    ],
+    "size": 5
+  },
+  "cluster_1": {
+    "headings": [
+      "Contents"
+    ],
+    "sources": [
+      "general"
+    ],
+    "size": 1
+  },
+  "cluster_2": {
+    "headings": [
+      "Overview"
+    ],
+    "sources": [
+      "introductions"
+    ],
+    "size": 1
+  },
+  "cluster_3": {
+    "headings": [
+      "Template",
+      "Histoire"
+    ],
+    "sources": [
+      "general",
+      "general"
+    ],
+    "size": 2
+  },
+  "cluster_4": {
+    "headings": [
+      "Chapter 1"
+    ],
+    "sources": [
+      "chapters"
+    ],
+    "size": 1
+  }
+}

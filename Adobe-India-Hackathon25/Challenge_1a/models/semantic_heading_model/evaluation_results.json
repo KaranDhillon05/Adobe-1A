@@ -1,0 +1,78 @@
+{
+  "accuracy": 1.0,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1_score": 0.0,
+  "test_results": [
+    {
+      "text": "Introduction",
+      "max_similarity": 0.9999998211860657,
+      "predicted_heading": true,
+      "actual_heading": true,
+      "correct": true
+    },
+    {
+      "text": "Chapter 1: Overview",
+      "max_similarity": 0.7498173713684082,
+      "predicted_heading": true,
+      "actual_heading": true,
+      "correct": true
+    },
+    {
+      "text": "1. Background Information",
+      "max_similarity": 0.6902115345001221,
+      "predicted_heading": true,
+      "actual_heading": true,
+      "correct": true
+    },
+    {
+      "text": "Summary and Conclusions",
+      "max_similarity": 0.7733833193778992,
+      "predicted_heading": true,
+      "actual_heading": true,
+      "correct": true
+    },
+    {
+      "text": "Section 2.1: Methodology",
+      "max_similarity": 0.627530574798584,
+      "predicted_heading": true,
+      "actual_heading": true,
+      "correct": true
+    },
+    {
+      "text": "References",
+      "max_similarity": 0.9999996423721313,
+      "predicted_heading": true,
+      "actual_heading": true,
+      "correct": true
+    },
+    {
+      "text": "Table of Contents",
+      "max_similarity": 0.9999999403953552,
+      "predicted_heading": true,
+      "actual_heading": true,
+      "correct": true
+    },
+    {
+      "text": "This is regular text content",
+      "max_similarity": 0.31552061438560486,
+      "predicted_heading": false,
+      "actual_heading": false,
+      "correct": true
+    },
+    {
+      "text": "Please click here",
+      "max_similarity": 0.32473066449165344,
+      "predicted_heading": false,
+      "actual_heading": false,
+      "correct": true
+    },
+    {
+      "text": "Error message",
+      "max_similarity": 0.24597081542015076,
+      "predicted_heading": false,
+      "actual_heading": false,
+      "correct": true
+    }
+  ]
+}
